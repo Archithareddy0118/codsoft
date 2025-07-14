@@ -36,37 +36,4 @@ def update_contact():
     name = input("Enter name to update: ")
     if name in contacts:
         new_number = input("Enter new phone number: ")
-        contacts[name] = new_number
-        print("Contact updated.")
-    else:
-        print("Contact not found.")
-
-def menu():
-    while True:
-        print("\n--- Contact Book ---")
-        print("1. Add Contact")
-        print("2. View Contacts")
-        print("3. Delete Contact")
-        print("4. Search Contact")
-        print("5. Update Contact")
-        print("6. Exit")
-
-        choice = input("Choose an option (1-6): ")
-
-        if choice == "1":
-            add_contact()
-        elif choice == "2":
-            view_contacts()
-        elif choice == "3":
-            delete_contact()
-        elif choice == "4":
-            search_contact()
-        elif choice == "5":
-            update_contact()
-        elif choice == "6":
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid option. Try again.")
-
-menu()
+        contacts[name] = 
